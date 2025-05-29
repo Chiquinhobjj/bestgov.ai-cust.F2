@@ -1,0 +1,93 @@
+/*
+┌──────────────────────────────────────────────────────────────────────────────┐
+│ @author: Davidson Gomes                                                      │
+│ @file: /app/globals.css                                                      │
+│ Developed by: Davidson Gomes                                                 │
+│ Creation date: May 13, 2025                                                  │
+│ Contact: contato@bestgov.com                                                │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ @copyright © BestGov Platform 2025. All rights reserved.                     │
+│ Licensed under the Apache License, Version 2.0                               │
+│                                                                              │
+│ You may not use this file except in compliance with the License.             │
+│ You may obtain a copy of the License at                                      │
+│                                                                              │
+│    http://www.apache.org/licenses/LICENSE-2.0                                │
+│                                                                              │
+│ Unless required by applicable law or agreed to in writing, software          │
+│ distributed under the License is distributed on an "AS IS" BASIS,            │
+│ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.     │
+│ See the License for the specific language governing permissions and          │
+│ limitations under the License.                                               │
+├──────────────────────────────────────────────────────────────────────────────┤
+│ @important                                                                   │
+│ For any future changes to the code in this file, it is recommended to        │
+│ include, together with the modification, the information of the developer    │
+│ who changed it and the date of modification.                                 │
+└──────────────────────────────────────────────────────────────────────────────┘
+*/
+
+/* BestGov Brand Typography - Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* BestGov Brand Colors - Usando Cinza Claro como fundo em vez de branco puro */
+    --background: 210 22% 96%; /* Cinza Claro #F4F6F8 */
+    --foreground: 214 23% 20%; /* Cinza Escuro #2E3543 */
+    --card: 0 0% 100%; /* Branco #FFFFFF */
+    --card-foreground: 214 23% 20%; /* Cinza Escuro #2E3543 */
+    --popover: 0 0% 100%; /* Branco #FFFFFF */
+    --popover-foreground: 214 23% 20%; /* Cinza Escuro #2E3543 */
+    --primary: 201 59% 18%; /* Azul Profundo #102B3F */
+    --primary-foreground: 0 0% 100%; /* Branco */
+    --secondary: 210 22% 96%; /* Cinza Claro #F4F6F8 */
+    --secondary-foreground: 214 23% 20%; /* Cinza Escuro #2E3543 */
+    --muted: 210 22% 96%; /* Cinza Claro #F4F6F8 */
+    --muted-foreground: 214 23% 20%; /* Cinza Escuro #2E3543 */
+    --accent: 162 61% 60%; /* Verde BestGov #5FD3AE */
+    --accent-foreground: 201 59% 18%; /* Azul Profundo */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 22% 96%; /* Cinza Claro #F4F6F8 */
+    --input: 210 22% 96%; /* Cinza Claro #F4F6F8 */
+    --ring: 162 61% 60%; /* Verde BestGov #5FD3AE */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* BestGov Dark Theme - Usando Azul Profundo como background em vez de preto */
+    --background: 201 59% 18%; /* Azul Profundo #102B3F */
+    --foreground: 0 0% 100%; /* Branco */
+    --card: 201 59% 15%; /* Azul Profundo mais escuro #0D2333 */
+    --card-foreground: 0 0% 100%; /* Branco */
+    --popover: 201 59% 15%; /* Azul Profundo mais escuro #0D2333 */
+    --popover-foreground: 0 0% 100%; /* Branco */
+    --primary: 162 61% 60%; /* Verde BestGov #5FD3AE */
+    --primary-foreground: 201 59% 18%; /* Azul Profundo */
+    --secondary: 201 59% 22%; /* Azul Profundo mais claro #153449 */
+    --secondary-foreground: 0 0% 100%; /* Branco */
+    --muted: 201 59% 22%; /* Azul Profundo mais claro #153449 */
+    --muted-foreground: 210 22% 96%; /* Cinza Claro #F4F6F8 */
+    --accent: 162 61% 60%; /* Verde BestGov #5FD3AE */
+    --accent-foreground: 201 59% 18%; /* Azul Profundo */
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 214 23% 20%; /* Cinza Escuro #2E3543 */
+    --input: 214 23% 20%; /* Cinza Escuro #2E3543 */
+    --ring: 162 61% 60%; /* Verde BestGov #5FD3AE */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
