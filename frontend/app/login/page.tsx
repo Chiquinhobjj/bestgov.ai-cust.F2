@@ -274,8 +274,8 @@ export default function LoginPage() {
 
   // Defina um logo condicional baseado no tema
   const logoSrc = theme === "dark" 
-    ? "/images/bestgov-logo-white.svg" 
-    : "/images/bestgov-logo.svg";
+    ? "https://res.cloudinary.com/dz58jqf62/image/upload/v1748011004/bestgov-logo-br_u4wt2w.svg" 
+    : "https://res.cloudinary.com/dz58jqf62/image/upload/v1748010846/bestgov-logo_z4mmth.svg";
 
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-background p-4">
